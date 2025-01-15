@@ -1,11 +1,100 @@
-body {
-  background-color: #333;
-  background-image: url(../assets/images/test.png);
-  background-repeat: no-repeat;
-  background-size: 50px;
+* {
+  box-sizing: border-box;
 }
 
-.example {
+img {
+  display: block;
+  max-width: 100%;
+}
+
+nav ul {
+  margin-block: 0;
+  padding-left: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Alata', serif;
+  font-weight: 300;
+}
+
+body {
+  margin: 0;
+  font-family: 'Josefin Sans', serif;
+}
+
+.header {
+  height: 650px;
+  padding: 40px 24px;
+  background-image: url(../assets/images/mobile/image-hero.jpg);
+  margin-bottom: 96px;
+}
+
+.header-top-bar {
   display: flex;
-  user-select: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo,
+.menu-icon {
+  position: relative;
+  z-index: 10;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 40px 25px;
+  background-color: #000;
+  /* display: none; */
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.main {
+  padding-inline: 24px;
+}
+
+.creation {
+  position: relative;
+  color: #fff;
+  background-image: linear-gradient(to right, rgb(0 0 0 / 0.6), transparent);
+  height: 120px;
+  margin-bottom: 24px;
+}
+
+.creation__img {
+  position: relative;
+  height: 120px;
+  z-index: -1;
+}
+
+.creation__title {
+  font-family: 'Josefin Sans', serif;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 300;
+  max-width: 9ch;
+  margin: 0;
+}
+
+.creation__title--small {
+  max-width: 6ch;
 }

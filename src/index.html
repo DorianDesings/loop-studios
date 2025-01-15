@@ -4,11 +4,90 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@100..700&display=swap"
+      rel="stylesheet"
+    />
     <title>Vite App</title>
   </head>
   <body>
-    <h1 id="title">Plantilla Vite</h1>
-    <img src="./assets/images/test.png" alt="" />
+    <header class="header">
+      <div class="header-top-bar">
+        <img class="logo" src="./assets/images/logo.svg" alt="" />
+        <img class="menu-icon" src="./assets/images/icon-hamburger.svg" alt="" />
+      </div>
+      <nav>
+        <ul class="menu">
+          <li class="menu__item">
+            <a href="#" class="menu__link">ABOUT</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">CAREERS</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">EVENTS</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">PRODUCTS</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">SUPPORT</a>
+          </li>
+        </ul>
+      </nav>
+      <h1>INMERSIVE EXPERIENCIES THAT DELIVER</h1>
+    </header>
+    <main class="main">
+      <article>
+        <img src="./assets/images/mobile/image-interactive.jpg" alt="" />
+        <h2>THE LEADER IN INTERACTIVE VR</h2>
+        <p>
+          Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best
+          companies around the globe. Our award-winning creations have transformed businesses through digital
+          experiences that bind to their brand.
+        </p>
+      </article>
+      <section class="creations">
+        <h2 class="creations__title">OUR CREATIONS</h2>
+
+        <article class="creation">
+          <img class="creation__img" src="./assets/images/mobile/image-deep-earth.jpg" alt="" />
+          <h3 class="creation__title">DEEP EARTH</h3>
+        </article>
+
+        <article class="creation">
+          <img class="creation__img" src="./assets/images/mobile/image-night-arcade.jpg" alt="" />
+          <h3 class="creation__title">NIGHT ARCADE</h3>
+        </article>
+        <article class="creation">
+          <img class="creation__img" src="./assets/images/mobile/image-soccer-team.jpg" alt="" />
+          <h3 class="creation__title">SOCCER TEAM VR</h3>
+        </article>
+        <article class="creation">
+          <img class="creation__img" src="./assets/images/mobile/image-grid.jpg" alt="" />
+          <h3 class="creation__title creation__title--small">THE GRID</h3>
+        </article>
+        <article class="creation">
+          <img class="creation__img" src="./assets/images/mobile/image-from-above.jpg" alt="" />
+          <h3 class="creation__title">FROM UP ABOVE VR</h3>
+        </article>
+        <article class="creation">
+          <img class="creation__img" src="./assets/images/mobile/image-pocket-borealis.jpg" alt="" />
+          <h3 class="creation__title">POCKET BOREALIS</h3>
+        </article>
+        <article class="creation">
+          <img class="creation__img" src="./assets/images/mobile/image-curiosity.jpg" alt="" />
+          <h3 class="creation__title">THE CURIOSITY</h3>
+        </article>
+        <article class="creation">
+          <img class="creation__img" src="./assets/images/mobile/image-fisheye.jpg" alt="" />
+          <h3 class="creation__title">MAKE IT FISHEYE</h3>
+        </article>
+        <button>SEE ALL</button>
+      </section>
+    </main>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
